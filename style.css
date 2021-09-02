@@ -1,0 +1,173 @@
+:root {
+  --base-blue: #2793e5;
+  --Dark-blue: #3939e9;
+  --Greenish: #1ae890;
+  --darkgreen: #00ad63;
+  --light-blue: #79bbee;
+  --Red: #ff0d00;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+body {
+  background-color: #79bbee;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  padding: 10px;
+}
+
+.name-text {
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: #1ae890;
+}
+.nav-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about {
+  background-color: var(--base-blue);
+  border-color: var(--Dark-blue);
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+.picture {
+  border-style: solid;
+  border-color: var(--Greenish);
+  border-width: 1px;
+  border-radius: 8px;
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.goatpic {
+  display: flex;
+  align-content: flex-start;
+  margin: 30px;
+}
+
+/*Project Box*/
+.project-section {
+  padding-bottom: 2em;
+}
+.proj1 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darkgreen);
+  border-radius: 8px;
+  background-color: var(--Greenish);
+  padding-bottom: 2em;
+  margin: 2em 8em;
+}
+#goatlink {
+  border-style: solid;
+  border-radius: 8%;
+  border-color: var(--Dark-blue);
+  background-color: var(--Red);
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/*Dropdown*/
+.dropbtn {
+  background-color: var(--Dark-blue);
+  color: white;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 8px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--Dark-blue);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  text-decoration: underline;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: var(--light-blue);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: var(--base-blue);
+}
+
+/*Skills Box*/
+.skills {
+  border-color: var(--darkgreen);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 12px;
+  background-color: var(--Greenish);
+  padding: 5px;
+  margin-top: 4em;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+/*Contact Box*/
+.Contact {
+  background-color: var(--base-blue);
+  border-color: var(--Dark-blue);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 12px;
+  padding: 5px;
+  margin: auto 8em;
+}
+#email1 {
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
