@@ -1,10 +1,16 @@
 :root {
-  --base-blue: #2793e5;
-  --Dark-blue: #3939e9;
-  --Greenish: #1ae890;
-  --darkgreen: #00ad63;
-  --light-blue: #79bbee;
-  --Red: #ff0d00;
+  --light-purple: #b6abf8;
+  --primary-purple: #9182f0;
+  --darker-purple: #533fd3;
+  --light-red: #fea4b0;
+  --primary-red: #fd788a;
+  --darker-red: #f8304c;
+  --light-green: #bdfca2;
+  --primary-green: #9df876;
+  --darker-green: #66eb2e;
+  --light-blue: #a7c9f7;
+  --base-blue: #7cacee;
+  --dark-blue: #3676cd;
 }
 
 html {
@@ -24,9 +30,10 @@ h3 {
 }
 
 body {
-  background-color: #79bbee;
+  background-color: lightgray;
   text-align: center;
   margin: 0;
+  color: white;
 }
 
 main {
@@ -38,7 +45,7 @@ main {
 }
 
 .navbar {
-  background-color: #1ae890;
+  background-color: var(--dark-blue);
 }
 .nav-box {
   display: flex;
@@ -49,10 +56,13 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-
+.svg-icon {
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(150deg)
+    brightness(100%) contrast(100%);
+}
 .about {
-  background-color: var(--base-blue);
-  border-color: var(--Dark-blue);
+  background-color: var(--primary-purple);
+  border-color: var(--darker-purple);
   border-style: solid;
   border-radius: 12px;
   border-width: 5px;
@@ -63,38 +73,51 @@ main {
 }
 .picture {
   border-style: solid;
-  border-color: var(--Greenish);
-  border-width: 1px;
+  border-color: var(--darker-purple);
+  border-width: 5px;
   border-radius: 8px;
   margin: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
+  height: auto;
 }
 .goatpic {
   display: flex;
   align-content: flex-start;
   margin: 30px;
+  width: 100%;
+  height: auto;
 }
 
 /*Project Box*/
 .project-section {
   padding-bottom: 2em;
 }
+.proj-header {
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darker-purple);
+  border-radius: 8px;
+  background-color: var(--primary-purple);
+  padding-bottom: auto;
+  margin: 4em 8em 2em;
+}
 .proj1 {
   border-style: solid;
   border-width: 5px;
-  border-color: var(--darkgreen);
+  border-color: var(--darker-purple);
   border-radius: 8px;
-  background-color: var(--Greenish);
+  background-color: var(--primary-purple);
   padding-bottom: 2em;
   margin: 2em 8em;
 }
 #goatlink {
   border-style: solid;
   border-radius: 8%;
-  border-color: var(--Dark-blue);
-  background-color: var(--Red);
+  border-color: white;
+  background-color: var(--darker-red);
   padding: 10px;
   margin: 5px;
   color: white;
@@ -103,13 +126,15 @@ main {
 
 /*Dropdown*/
 .dropbtn {
-  background-color: var(--Dark-blue);
+  background-color: var(--primary-purple);
   color: white;
   margin-top: 12px;
   margin-bottom: 10px;
   padding: 16px;
   font-size: 20px;
-  border: none;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darker-purple);
   cursor: pointer;
   border-style: none;
   border-radius: 8px;
@@ -121,7 +146,7 @@ main {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--Dark-blue);
+  background-color: var(--darker-purple);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -134,22 +159,22 @@ main {
   display: block;
 }
 .dropdown-content a:hover {
-  background-color: var(--light-blue);
+  background-color: var(--light-purple);
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown:hover .dropbtn {
-  background-color: var(--base-blue);
+  background-color: var(--light-purple);
 }
 
 /*Skills Box*/
 .skills {
-  border-color: var(--darkgreen);
+  border-color: var(--dark-blue);
   border-width: 5px;
   border-style: solid;
   border-radius: 12px;
-  background-color: var(--Greenish);
+  background-color: var(--base-blue);
   padding: 5px;
   margin-top: 4em;
   margin-left: 8em;
@@ -159,7 +184,7 @@ main {
 /*Contact Box*/
 .Contact {
   background-color: var(--base-blue);
-  border-color: var(--Dark-blue);
+  border-color: var(--dark-blue);
   border-style: solid;
   border-width: 5px;
   border-radius: 12px;
@@ -170,4 +195,19 @@ main {
   text-align: left;
   font-size: 18px;
   padding-bottom: 10px;
+}
+
+/*Device Accommodation*/
+@media screen and (max-width: 1000px) {
+  .dropdown-menu {
+    width: 250px;
+  }
+  #rent-button {
+    font-size: 1rem;
+    padding: 3px;
+    margin-right: 20px;
+  }
+  #menu-head {
+    width: 250px;
+  }
 }
