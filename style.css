@@ -113,7 +113,7 @@ main {
   padding-bottom: 2em;
   margin: 2em 8em;
 }
-#goatlink {
+#goat-link {
   border-style: solid;
   border-radius: 8%;
   border-color: white;
@@ -125,7 +125,7 @@ main {
 }
 
 /*Dropdown*/
-.dropbtn {
+.drop-btn {
   background-color: var(--primary-purple);
   color: white;
   margin-top: 12px;
@@ -199,15 +199,7 @@ main {
 
 /*Device Accommodation*/
 @media screen and (max-width: 1000px) {
-  .dropdown-menu {
-    width: 250px;
-  }
-  #rent-button {
-    font-size: 1rem;
-    padding: 3px;
-    margin-right: 20px;
-  }
-  #menu-head {
+  #goat-pic {
     width: 250px;
   }
 }
