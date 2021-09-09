@@ -84,11 +84,7 @@ main {
   height: auto;
 }
 #goat-pic {
-  display: flex;
-  align-content: flex-start;
-  margin: 30px;
-  width: 100%;
-  height: auto;
+  border-radius: 8px;
 }
 
 /*Project Box*/
@@ -119,7 +115,6 @@ main {
   border-color: white;
   background-color: var(--darker-red);
   padding: 10px;
-  margin: 5px;
   color: white;
   text-decoration: none;
 }
@@ -164,7 +159,7 @@ main {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropbtn {
+.dropdown:hover .drop-btn {
   background-color: var(--light-purple);
 }
 
@@ -198,7 +193,7 @@ main {
 }
 
 /*Device Accommodation*/
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .drop-btn {
     background-color: var(--primary-purple);
     color: white;
