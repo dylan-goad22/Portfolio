@@ -83,19 +83,7 @@ main {
   max-width: 100%;
   height: auto;
 }
-#goat-pic {
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--darker-purple);
-}
-#charity-pic {
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--darker-purple);
-}
-#CRUD-pic {
+.proj-pic {
   border-radius: 8px;
   border-style: solid;
   border-width: 5px;
@@ -268,7 +256,7 @@ main {
     padding-bottom: auto;
     margin: 4em 0.5em 2em;
   }
-  .proj1 {
+  .proj {
     border-style: solid;
     border-width: 5px;
     border-color: var(--darker-purple);
@@ -277,7 +265,7 @@ main {
     padding-bottom: 2em;
     margin: 2em 0.5em;
   }
-  #goat-pic {
+  .proj-pic {
     display: flex;
     align-content: flex-start;
     margin: 30px;
