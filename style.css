@@ -85,6 +85,21 @@ main {
 }
 #goat-pic {
   border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darker-purple);
+}
+#charity-pic {
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darker-purple);
+}
+#CRUD-pic {
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darker-purple);
 }
 
 /*Project Box*/
@@ -100,7 +115,7 @@ main {
   padding-bottom: auto;
   margin: 4em 8em 2em;
 }
-.proj1 {
+.proj {
   border-style: solid;
   border-width: 5px;
   border-color: var(--darker-purple);
@@ -109,7 +124,7 @@ main {
   padding-bottom: 2em;
   margin: 2em 8em;
 }
-#goat-link {
+.proj-link {
   border-style: solid;
   border-radius: 8%;
   border-color: white;
