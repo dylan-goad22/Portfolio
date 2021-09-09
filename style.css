@@ -267,8 +267,9 @@ main {
   }
   .proj-pic {
     display: flex;
-    align-content: flex-start;
-    margin: 30px;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 85%;
     height: auto;
   }
