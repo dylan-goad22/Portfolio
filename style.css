@@ -67,7 +67,7 @@ main {
   border-radius: 12px;
   border-width: 5px;
   margin-top: 15px;
-  padding: 5px;
+  padding: 15px;
   margin-left: 8em;
   margin-right: 8em;
 }
@@ -120,6 +120,9 @@ main {
   padding: 10px;
   color: white;
   text-decoration: none;
+}
+.proj-desc {
+  padding-bottom: 1em;
 }
 
 /*Dropdown*/
