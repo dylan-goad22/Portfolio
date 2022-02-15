@@ -123,6 +123,7 @@ main {
 }
 .proj-desc {
   padding-bottom: 1em;
+  margin: 1em 2em 1em 2em;
 }
 
 /*Dropdown*/
@@ -176,12 +177,24 @@ main {
   border-style: solid;
   border-radius: 12px;
   background-color: var(--base-blue);
-  padding: 5px;
-  margin-top: 4em;
+  margin-top: 15px;
+  padding: 15px;
   margin-left: 8em;
   margin-right: 8em;
+  display: flex;
+  flex-direction: column;
 }
 
+#skill-title {
+  margin: auto;
+  padding: 5px;
+}
+
+.skill-desc {
+  display: inline-block;
+  margin: auto;
+  margin: auto 10px auto 10px;
+}
 /*Contact Box*/
 .Contact {
   background-color: var(--base-blue);
